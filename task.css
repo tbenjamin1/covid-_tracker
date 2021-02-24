@@ -1,0 +1,186 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+.logo{
+    
+    width: 3rem;
+    height: 3rem;
+     border-radius: 7rem; 
+    top: 2rem;
+    float: left;
+}
+.btn{
+    float: right;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    border-radius: 3rem;
+    height: 2rem;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    
+    border-radius: 3rem;
+    width: 30rem;
+    height: 2rem;
+
+}
+p h1{
+    font-size: 3rem;
+
+}
+header{
+    height: 10vh;
+    width: 100wh;
+    background-color: honeydew;
+}
+
+.tasks{
+    background-color:#F4F5F6;
+width: 100vw;
+height: 30vh;
+display: grid;
+justify-content: center;
+align-content: center;
+
+
+grid-template-columns: repeat(5,auto);
+
+}
+
+.cell{
+
+    width:150px;
+    height: 100px;
+    padding: 3px 10px ;
+     background-color: white;
+    border: 5px solid #F4F5F6;
+ 
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+#list{
+ text-align: center;
+}
+.srch{
+  margin-left:10rem;
+  
+}
+/* form of new task */
+form {
+    border: 3px solid #202020;
+    height: 90vh;
+  }
+  #myCanvas{
+    height: 20vh;
+    width: 20wh;
+    float: left;
+
+    border: 2px solid black;
+}
+ 
+  /* Full-width inputs */
+input[type=text]{
+    width: 20rem;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .btn3{
+      float: right;
+      background-color: rgb(22, 22, 59);
+      margin-right: 5rem;
+      border-radius: 3rem;
+      margin-top: 3rem;
+      width: 6rem;
+  }
+  #btnnn{
+    color: ivory ;
+    background-color: rgb(22, 22, 59);
+    margin-right: 5rem;
+    border-radius: 3rem;
+    margin-top: 3rem;
+    width: 6rem;
+}
+    /* The "Forgot password" text */
+  span {
+    float: right;
+    padding-top: 16px;
+  }
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  .container {
+    padding: 14px;
+    /* border: 2px solid rgb(219, 98, 98); */
+    margin-top:13%;
+  }
+  
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.btn3{
+      display: block;
+      float: none;
+    }
+}

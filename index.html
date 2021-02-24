@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoApp</title>
+    <link rel="stylesheet" href="task.css">
+    
+
+</head>
+<body>
+    <header>
+        <div>
+            <div ><img src="images/IB_logo.png" class="logo"></div>
+            <div class="srch"  >
+            <input type="text" placeholder="Search.." id="searchtext" >
+            <select id="pri">
+                <option value="high">filter</option>
+                <option value="high">high priority</option>
+                <option value="saab">medium priority</option>
+                <option value="vw">low priority</option> 
+            </select>
+        </div>
+            <button type="submit" class="btn" id="newbtn" 
+            onclick="document.getElementById('id01').style.display='block'"  >new task</button>
+            <button type="button"  id="savetask" style="display: none;" >savetask</button>
+        </div>
+    </header>
+    <div class="tasks" id="tasks">
+        <div class="cell " data-cell>total tasks</div>
+        <div class="cell " data-cell>active task</div>
+        <div class="cell" data-cell>tasks done</div>
+        <div class="cell" data-cell>active high priority</div>
+        <div class="cell" data-cell>closed high priority</div>
+        
+    </div>
+    
+    
+   
+    <div class="list-todo">
+        
+        <ul id="todo"></ul>
+        <div id="list">
+            <h1>NOTHING HERE</h1>
+            <p>just like your crush's replies</p>
+            <button type="submit" class="btn2"> start with new task</button>
+            </div>
+      </div>
+    </div>
+    
+    <div id="id01" class="modal">
+        
+        <form class="modal-content animate" id="id0"  >
+            <div >
+                <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+        </div>
+        <h1>new task</h1>    
+        <div >
+            <input type="file" id="imageInput" accept = "image/*" required size="10"><br>
+             <canvas id= "myCanvas" ></canvas>
+          </div>
+          <br>
+         
+        <div class="container">
+           <label ><b>title<b></label><br>
+            <input id="id02" type="text" placeholder="140 characters" name="title" maxlength="140" title="characters must not be over 140" required size="10"><br>
+            <label> <b>discription</b></label><br>
+            <input id="id03" type="text" placeholder="240 characters" name="title" maxlength="240" title="characters must not be over 240" required size="10"><br>
+            <label for="priority">Choose a priority:</label>
+
+        <select id="priority" required>
+        <option value="high">high priority</option>
+        <option value="saab">medium priority</option>
+        <option value="vw">low priority</option>
+ 
+</select>
+ </div>
+            <button type="submit" class="btn3" id="btnbutton" 
+            onclick="document.getElementById('list').style.display='none'" >Add new task</button>
+        </form>
+        
+      </div>
+
+      <script src="task.js" ></script>
+</body>  
+
+
+</html>
